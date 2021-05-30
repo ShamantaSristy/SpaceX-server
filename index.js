@@ -18,9 +18,9 @@ client.connect(err => {
 
 // user adding part 
 app.post('/addUsers',(req,res) => {
-    const newBorrow = req.body;
-    console.log("Users uploading",newBorrow);
-    userCollection.insertOne(newBorrow)
+    const newUser = req.body;
+    console.log("Users uploading",newUser);
+    userCollection.insertOne(newUser)
     .then(result => {
       console.log("User adding " , result.insertedCount);
       res.send(result.insertedCount > 0)
