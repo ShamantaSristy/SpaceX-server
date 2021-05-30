@@ -37,7 +37,7 @@ app.post('/addUsers',(req,res) => {
   });
 
   app.get('/', (req, res) => {
-    res.send('Hello Server')
+    res.send('Hello I am from Server')
   })
   // perform actions on the collection object
 //   client.close();
